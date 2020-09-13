@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    &.menuAtivo{
+        overflow: hidden;
+    }
+    .app__container{
+        background-color: $primary-color;
+        &.section{
+            background-color: $white;
+        }
+    }
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+    color: $color;
+}
+
+h1{
+    font-size: 50px;
+    color: $white;
+}
+
+h2{
+    font-size: 45px;
+    color: $white;
+}
+
+h3{
+    font-size: 25px;
+    color: $white;
+}
+
+h4{
+    font-size: 20px;
+    color: $white;
+}
+
+a{
+    text-decoration: none;
+    color: $color;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1700px;
+    @media(max-width: 720px){
+        padding: 0 1rem;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+
+.chamadaLink{
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    span{
+        line-height: 10px;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: #f9004d;
+            opacity: .75;
+            transition: all .2s;
+        }
+        &:hover{
+            color: $white;
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+}

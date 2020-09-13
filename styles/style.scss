@@ -1,0 +1,20 @@
+// Global
+@import './global/variable.scss';
+@import './global/fonts.scss';
+@import './global/global.scss';
+
+//Tempalte
+@import './template/containerSection.scss';
+@import './template/sectionText.scss';
+@import './template/article.scss';
+
+// Componentes
+@import './componentes/header.scss';
+@import './componentes/highlight.scss';
+@import './componentes/about.scss';
+@import './componentes/services.scss';
+@import './componentes/footer.scss';
+@import './componentes/partners.scss';
+@import './componentes/whatsapp.scss';
+@import './componentes/headServices.scss';
+@import './componentes/customers.scss';

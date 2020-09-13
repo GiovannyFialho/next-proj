@@ -1,0 +1,174 @@
+.footer{
+    background: $footer-color;
+    position: relative;
+    &__container{
+        padding-top: 3rem;
+        @media(max-width: 800px){
+            padding: initial;
+        }
+        &__contactUs{
+            position: absolute;
+            width: 100%;
+            max-width: 500px;
+            background: linear-gradient(145deg,$colorBg1,$colorBg2);
+            bottom: 0;
+            padding: 40px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 5px;
+            left: 5%;
+            @media(max-width: 1300px){
+                max-width: 400px;
+            }
+            @media(max-width: 1100px){
+                max-width: 300px;
+            }
+            @media(max-width: 800px){
+                position: relative;
+                max-width: initial;
+                width: initial;
+                margin-bottom: 30px;
+                left: initial;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p{
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 4px;
+                margin-bottom: 20px;
+                color: $white;
+                z-index: 1;
+                @media(max-width: 800px){
+                    text-align: center;
+                }
+            }
+            h2{
+                font-size: 80px;
+                width: 50%;
+                line-height: 70px;
+                margin-bottom: 20px;
+                z-index: 1;
+                @media(max-width: 1100px){
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+                @media(max-width: 800px){
+                    width: initial;
+                    text-align: center;
+                }
+            }
+            a{
+                color: $white;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border: 2px solid $white;
+                padding: 15px 40px;
+                border-radius: 6px;
+                display: inline-block;
+                font-weight: 500;
+                transition: .3s;
+                width: max-content;
+                z-index: 1;
+                margin-top: 10px;
+                @media(max-width: 800px){
+                    margin: 0 auto;
+                }
+                &:hover{
+                    background: $white;
+                    color: $color-neon;
+                    box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+                    transform: translateY(-5px);
+                }
+            }
+        }
+        &__infosContainer{
+            width: 50%;
+            margin-left: auto;
+            @media(max-width: 800px){
+                width: initial;
+            }
+            &__infos{
+                display: flex;
+                justify-content: space-between;
+                @media(max-width: 750px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &__menu{
+                    padding: 0 5rem;
+                    @media(max-width: 1100px){
+                        margin-bottom: 50px;
+                        padding: 0 2rem;
+                    }
+                    p{
+                        font-weight: 600;
+                        color: $white;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        @media(max-width: 750px){
+                            text-align: center;
+                        }
+                    }
+                    &__items{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        &__item{
+                            margin: 7px 0;
+                            @media(max-width: 750px){
+                                text-align: center;
+                            }
+                            a{
+                                &:hover{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__atendimento{
+                    p{
+                        font-weight: 600;
+                        color: $white;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        @media(max-width: 750px){
+                            text-align: center;
+                        }
+                    }
+                    &__items{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        &__item{
+                            margin: 7px 0;
+                            display: flex;
+                            @media(max-width: 750px){
+                                text-align: center;
+                            }
+                            svg{
+                                color: $color-neon;
+                                font-size: 20px;
+                                margin-right: 10px;
+                            }
+                            a{
+                                &:hover{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__copyright{
+                margin: 5rem 0 0 0;
+                padding-bottom: 2rem;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.highlight{
+    position: relative;
+    height: 90vh;
+    @media(max-width: 850px){
+        height: 100vh;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        @media (max-width: 700px){
+            margin-top: -30%;
+        }
+        &__chamada{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 700px;
+                @media(max-width: 800px){
+                    width: 500px;
+                }
+                @media(max-width: 600px){
+                    width: 100%;
+                }
+            }
+        }
+        &__slogan{
+            margin-top: 30px;
+            p{
+                text-align: center;
+                color: $white;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                @media(max-width: 768px){
+                    font-size: 13px;
+                }
+                @media(max-width: 414px){
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

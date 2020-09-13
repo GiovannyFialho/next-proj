@@ -1,0 +1,44 @@
+.customers{
+    position: relative;
+    padding: 5rem 0;
+    background-color: $second-color;
+    margin-bottom: 10rem;
+    &__container{
+        position: relative;
+        h2{
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        &__logos{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 80%;
+            margin: 0 auto;
+            @media(max-width: 600px){
+                flex-direction: column;
+                align-items: center;
+            }
+            &__item{
+                margin: 20px;
+                position: relative;
+                padding: 20px;
+                border-radius: 10px;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                @media(max-width: 600px){
+                    margin: 0 0 40px 0;
+                }
+                img{
+                    max-width: 200px;
+                }
+                &:hover {
+                    transform: translateY(-5px);
+                    .details {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
