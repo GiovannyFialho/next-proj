@@ -3,7 +3,7 @@ import { FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__container__contactUs" id="contact">
                     <p>Pronto para um novo projeto?</p>
@@ -61,6 +61,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }

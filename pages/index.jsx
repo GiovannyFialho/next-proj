@@ -11,8 +11,12 @@ export default function Home() {
     return (
         <>
             <Head>
+                <meta
+                    name="description"
+                    content="Especialistas em desenvolvimento de e-commerce, sites, sistemas e aplicativos."
+                />
+                
                 <title>Epic Solutions | Home</title>
-                <link rel="icon" href="/epic-icon.ico" />
             </Head>
             <div className="app__container">
                 <Header />
@@ -23,9 +27,7 @@ export default function Home() {
                     <Partners />
                     <Customers />
                 </main>
-                <footer>
-                    <Footer />  
-                </footer>
+                <Footer />
             </div>
         </>
     )
