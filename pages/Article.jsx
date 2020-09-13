@@ -20,7 +20,7 @@ export default function Article(props) {
                 <Header headerSection={true} />
                 <main>
                     <div className="containerSection">
-                        <HeadServices text={props.title} icon={props.icon} />
+                        <HeadServices title={props.title} icon={props.icon} />
                         <div className="sectionsText container">
                             {props.text}
                         </div>

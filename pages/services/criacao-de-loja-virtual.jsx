@@ -1,7 +1,7 @@
 import Article from '../Article';
 
 export default function App(){
-    const title = "Criação de e-commerce";
+    const title = "Criação de E-commerce";
     const description = "Descritivo de e-commerce";
     const icon = 'e-commerce';
     const text = (
